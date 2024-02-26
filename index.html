@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Example</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button id="openModalBtn">Open Modal</button>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <!-- EMAIL DIV -->
+        <div class="subscribe">
+          <div class="email-main-div">
+            <!-- email -->
+            <div class="email-div">
+              <p>FORGOT PASSWORD</p>
+              <input
+              id="email"
+                placeholder="Your e-mail"
+                class="subscribe-input"
+                name="email"
+                type="email"
+              />
+              <br />
+              <div class="submit-btn">SUBMIT</div>
+            </div>
+
+            <!-- otp -->
+            <div class="otp-div">
+              <p>VARIFY OTP</p>
+              <input
+              id="otp"
+                placeholder="Your OTP"
+                class="subscribe-input"
+                name="otp"
+                type="number"
+                maxlength="6"
+              />
+              <br />
+              <div class="submit-btn submit-otp">SUBMIT OTP</div>
+            </div>
+
+            <!-- CONFIRM PASS -->
+            <div class="password-div">
+              <p>Enver New PASSWORD</p>
+              <input
+                placeholder="Confirm New Password "
+                class="subscribe-input1"
+                name="pass"
+                type="password"
+              />
+              <input
+                placeholder="Enter New Password"
+                class="subscribe-input2"
+                name="cpass"
+                type="password"
+              />
+              <br />
+              <div class="submit-btn">SUBMIT</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
